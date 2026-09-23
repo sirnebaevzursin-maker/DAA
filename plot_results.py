@@ -5,11 +5,6 @@ import numpy as np
 
 data = pd.read_csv("results.csv")
 
-
-# -----------------------------
-# Time vs n
-# -----------------------------
-
 plt.figure(figsize=(6, 4))
 
 for algorithm in data["algorithm"].unique():
@@ -31,11 +26,6 @@ plt.grid(True)
 plt.savefig("time_vs_n.png", dpi=100)
 plt.close()
 
-
-
-# -----------------------------
-# Depth vs n
-# -----------------------------
 
 plt.figure(figsize=(6, 4))
 
